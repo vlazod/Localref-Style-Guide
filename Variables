@@ -1,0 +1,14 @@
+$light-blue: #58C4C4;
+$item-active-blue: #38788b;
+$medium-blue: #256370;
+$dark-blue: #0C404B;
+$blue-gray: #E8EFF0;
+$white-smoke: #F6F6F6;
+$light-gray: #eeeeee;
+$medium-gray: #E2E2E2;
+$medium-gray-alt: #adadad;
+$dark-gray: #343434;
+$light-rose: #ffc7ca;
+$rose: #D65D64;
+$dark-rose: #83393d;
+$white: #fff;

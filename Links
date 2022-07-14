@@ -5,7 +5,7 @@
     &:hover{
         color: $rose;
     }
-    &:visited{
+    &:active{
         color: $dark-blue;
     }
     &.active{

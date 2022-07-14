@@ -1,0 +1,26 @@
+.tooltip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    min-height: 45px;
+    padding: 10px;
+    background-color: $white;
+    box-shadow: 0 0 10px $medium-gray;
+    border-radius: 15px;
+    position: relative;
+    word-break: break-all;
+    margin: 20px;
+    
+    &::before{
+        content: "";
+        padding: 9px;
+        position: absolute;
+        bottom: -10px;
+        border-style: none solid solid none;
+        border-width: 1px;
+        border-color: $light-gray;
+        transform: rotate(45deg);
+        background-color: $white;
+    }
+}

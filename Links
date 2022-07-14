@@ -1,0 +1,14 @@
+.link{
+    text-decoration: none;
+    color: $light-blue;
+    transition: all .2s ease-out;
+    &:hover{
+        color: $rose;
+    }
+    &:visited{
+        color: $dark-blue;
+    }
+    &.active{
+        font-weight: bold;
+    }
+}

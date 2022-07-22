@@ -1,0 +1,13 @@
+.indicator{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid $medium-gray;
+    background-color: $medium-gray;
+    border-radius: 50%;
+    margin: 5px;
+    &.active{
+        border: 1px solid $rose;
+        background-color: $rose;
+    }
+}

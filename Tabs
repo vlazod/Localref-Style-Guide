@@ -1,0 +1,45 @@
+.tabs{
+    background: $white;
+    border-radius: 8px;
+    width: 600px;
+//    padding: 10px;
+    &__options{
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-bottom: 1px solid $medium-gray;
+        &--item{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            width: 100%; 
+            padding: 15px;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            font-family: 'Proxima Nova Rg';
+            color: $medium-gray-alt;
+            cursor: pointer;
+            &:hover:not(.active){
+                background-color: $light-gray;
+            }
+        }
+        .active{
+            border-bottom: 2px solid $rose;
+            color: $rose;
+            font-weight: 600;
+        }
+    }
+    &__content{
+        padding: 15px;
+        .content{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+    }
+}

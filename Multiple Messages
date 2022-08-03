@@ -1,0 +1,28 @@
+.message__container{
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    width: 450px;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border-top: 3px solid $medium-blue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 15px $medium-gray;
+    &--header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .message__header{
+            margin: 0;
+            font-size: 18px;
+        }
+        .message__close{
+            font-size: 40px;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+    }
+}

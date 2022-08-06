@@ -1,0 +1,35 @@
+.submenu{
+    background-color: #fff;
+    width: 180px;
+    height: 130px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    right: -5px;
+    top: -2px;
+    box-shadow: 0 0 10px $medium-gray-alt;
+    &__list{
+        margin: 0;
+        padding: 5px 0;
+        list-style: none;
+        &--item{
+            display: flex;
+            align-items: center;
+            padding: 20x;
+            height: 30px;
+            padding-left: 15px;
+            a{
+                text-decoration: none;
+                color: $dark-gray;
+            }
+            &:hover{
+                background-color: $light-gray;
+                color: $dark-gray;
+            }
+            &:hover a{
+                color: $rose;
+            } 
+        }
+    }
+}

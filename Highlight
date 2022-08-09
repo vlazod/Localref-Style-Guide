@@ -1,0 +1,20 @@
+.highlight{
+    width: 250px;
+    background-color: #57b2b5;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+    &__image{
+        width: 57px;
+        height: 57px;
+        box-shadow: 0 0 10px #397577;
+    }
+    &__text{
+        color: $white;
+        text-align: center;
+    }
+}

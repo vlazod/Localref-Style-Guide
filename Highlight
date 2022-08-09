@@ -1,6 +1,6 @@
 .highlight{
     width: 250px;
-    background-color: #57b2b5;
+    background-color: #458b8d;
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -11,10 +11,13 @@
     &__image{
         width: 57px;
         height: 57px;
-        box-shadow: 0 0 10px #397577;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #3e7e80;
+        overflow: hidden;
     }
     &__text{
         color: $white;
         text-align: center;
+       
     }
 }

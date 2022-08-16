@@ -1,0 +1,42 @@
+.socialCard{
+    width: 280px;
+    background: $white;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin: 15px 0;
+    border: 1px solid $medium-gray;
+    &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 10px;
+    }
+    &__info{
+       display: flex; 
+       align-items: center;
+       gap: 20px;
+       padding: 5px 0;
+       img{
+        width: 40px;
+       }
+       h2{
+        margin: 0;
+        font-size: 15px;
+        margin-bottom: 5px;
+       }
+       span{
+        color: $medium-gray-alt;
+       }
+    }
+    &__image{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+.instagram-icon{
+    width: 18px;
+    filter: invert(0.4) sepia(5) saturate(3) hue-rotate(310deg);
+}

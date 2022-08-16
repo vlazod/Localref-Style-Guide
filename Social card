@@ -5,6 +5,7 @@
     padding: 10px 12px;
     margin: 15px 0;
     border: 1px solid $medium-gray;
+    position: relative;
     &__icons{
         display: flex;
         align-items: center;
@@ -35,6 +36,10 @@
             width: 100%;
         }
     }
+}
+.submenu{
+    position: relative;
+    cursor: pointer;
 }
 .instagram-icon{
     width: 18px;

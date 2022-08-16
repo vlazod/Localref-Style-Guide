@@ -1,0 +1,109 @@
+.post{
+    background-color: $white;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin: 10px 0;
+    &__image{
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content__info{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        &--title{
+            margin: 0;
+        }
+        &--social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            .submenu{
+                position: relative;
+                cursor: pointer;
+                margin-left: -30px;
+                transform: translateX(40px);
+            }
+            .dot__menu{
+                display: block;
+                height: 2px;
+                width: 2px;
+                border-radius: 50%;
+                background-color: $medium-gray-alt;
+                position: relative;
+                cursor: pointer;
+                
+                &::before{
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 2px;
+                    border-radius: 50%;
+                    background-color: $medium-gray-alt;
+                    position: absolute;
+                    left: 0px;
+                    top: -5px;
+    
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 2px;
+                    border-radius: 50%;
+                    background-color: $medium-gray-alt;
+                    position: absolute;
+                    left: 0px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+    .content__text{
+        margin-bottom: 5px;
+        height: 60px;
+        overflow-y: auto;
+        p{
+            margin: 0;
+        }
+    }
+    .content__statistics{
+        display: flex;
+        justify-content: space-between;
+        &--interactions{
+            display: flex;
+            align-items: center;
+            .interactions__views,
+            .interactions__click{
+                display: flex;
+                width: 100px;
+                gap: 7px;
+                color: $dark-gray;
+            }
+            img{
+                width: 15px;
+                gap: 30px;
+            }
+        }
+        &--validity{
+            background-color: $light-gray;
+            padding: 5px 25px;
+            border: 1px solid $medium-gray;
+            border-radius: 5px;
+            color: $dark-gray;
+        }
+    }
+}
+.google-icon{
+    width: 20px;
+}

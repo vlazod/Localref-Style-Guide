@@ -1,59 +1,185 @@
-.button{
-    display: flex !important;
+.button {
+  //margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem; //155px
+  height: 45px;
+  border: 1px solid $medium-blue;
+  border-radius: 5px;
+  color: $medium-blue;
+  background-color: $white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Proxima Nova Rg";
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    color: $white;
+    background-color: $medium-blue;
+  }
+  &:active {
+    background-color: $dark-blue;
+    color: $white;
+  }
+  .button__icon {
+    width: 14px;
+    margin-right: 10px;
+  }
+  &.button_square{
+    width: 35px;
+    height: 35px;
+    border: 1px solid $medium-gray;
+    position: absolute;
+    right: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 155px;
-    height: 45px;
-    border: 1px solid $medium-blue;
-    border-radius: 5px;
+    transition: background-color .2s ease-in-out;
+    &:hover{
+      background-color: $medium-gray;
+    }
+    &:active{
+      background-color: $light-gray;
+    }
+    img{
+      margin: 0 !important;
+      filter: invert(0.4) sepia(5) saturate(3) hue-rotate(125deg);
+    }
+  }
+  &.button__centered {
+    display: block;
+    margin: auto;
+  }
+  &.button__block {
+    width: 100%;
+  }
+  &.button__main {
+    border: none;
+    color: $white;
+    background-color: $medium-blue;
+    &.small {
+      display: inline-flex !important;
+      justify-content: center;
+      background-color: $medium-blue;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      width: auto;
+      height: auto;
+      color: $white;
+    }
+    &:hover {
+      color: $light-blue;
+    }
+    &:active {
+      background-color: $dark-blue;
+      color: $white;
+    }
+  }
+  &.button__secondary {
+    border: 1px solid #39727d;
+    background-color: #dff8fd;
+    color: #39727d;
+    &:hover {
+      background-color: $medium-blue;
+      color: $white;
+    }
+    &:active {
+      background-color: $dark-blue;
+      color: $white;
+    }
+  }
+  &.button__secondary--alt {
+    border: none;
+    color: $white;
+    background-color: $light-blue;
+    &:hover {
+      background-color: $medium-blue;
+      color: $white;
+    }
+    &:active {
+      background-color: $dark-blue;
+      color: $white;
+    }
+  }
+  &.button__destructive {
+    border: none;
+    color: $white;
+    background-color: $rose;
+    &:hover {
+      color: $light-rose;
+    }
+    &:active {
+      background-color: $dark-rose;
+      color: $white;
+    }
+  }
+  &.button__tertiary {
+    border: 1px solid $medium-gray;
     color: $medium-blue;
-    background-color: $white;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Proxima Nova Rg';
-    cursor: pointer;
-    transition: all .2s;
-    &.button__centered{
-        display: block;
-        margin: auto;
+    background-color: $light-gray;
+    &:hover {
+      color: $light-blue;
     }
-    &.button__block{
-        width: 100%;
+    &:active {
+      color: $dark-gray;
     }
-    &.button__blue--medium{
-        border: none;
-        color: $white;
-        background-color: $medium-blue;
-        &:hover{
-            color: $light-blue;
-        }
-        &:active{
-            background-color: $dark-blue;
-            color: $white;
-        }
+  }
+  &.button__gray--alt {
+    border: none;
+    color: $medium-blue;
+    background-color: $medium-gray;
+    box-shadow: 0 0 18px $medium-gray;
+  }
+  &.button__highlight{
+    color: $white;
+    border: 1px solid $white;
+    background-color: #458b8d;
+  }
+  &.button__interactions{
+    border: 1px solid $medium-gray;
+    color: $light-blue;
+    font-weight: 500;
+    background-color: $light-gray-alt;
+    height: 35px;
+    width: 130px;
+    transition: all .2s ease-in-out;
+    &:hover{
+      background-color: $light-gray;
+      color: $light-blue-alt;
     }
-    &.button__blue--light{
-        border: none;
-        color: $white;
-        background-color: $light-blue;
+    &:active{
+      color: $light-blue;
+      background-color: $light-gray;
     }
-    &.button__rose{
-        border: none;
-        color: $white;
-        background-color: $rose;
-        &:hover{
-            color: $light-rose;
-        }
-        &:active{
-            background-color: $dark-rose;
-            color: $white;
-        }
+  }
+  &.dropdown{
+    width: 80px;
+    padding: none;
+    border: none;
+    background-color: $medium-gray;
+    &:hover{
+      background-color: $medium-gray-alt;
     }
-    &.button__gray{
-        border: none;
-        color: $medium-blue;
-        background-color: $medium-gray;
-        box-shadow: 0 0 18px $medium-gray;
+    &:active{
+      background-color: $medium-gray;
     }
-    
+  }
+}
+.outline__disabled{
+  border: 1px solid $medium-gray-alt;
+  color: $medium-gray-alt;
+}
+.disabled{
+  color: $white !important;
+  background-color: $medium-gray !important;
+  border: none;
+}
+.btn__icon{
+  filter: invert(0.4) sepia(5) saturate(4) hue-rotate(125deg);
+}
+.button__post--icon{
+  filter: invert(3) sepia(0) saturate(10) hue-rotate(0);
 }

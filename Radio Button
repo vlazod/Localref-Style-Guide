@@ -3,32 +3,30 @@
     display: inline-flex;
     align-items: center;
     input[type=radio]{
-        width: 20px;
-        height: 20px; 
-        border: 1px solid $medium-gray-alt; 
+        width: 18px;
+        height: 18px; 
+        border: 1px solid $medium-gray; 
         border-radius: 50%;
         -webkit-appearance: none;
         position: relative;
         background: $white;
         z-index: 3;
-        &:hover{
-            box-shadow: 0 0 5px $medium-gray-alt;
-        }
         &:checked + .input{
             opacity: 1;
-            background: $medium-blue;
-            z-index: 4;
+            background: $light-blue;
+            z-index: 4; 
         }
     }
     .input{
-        width: 10px;
-        height: 10px;
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
         display: inline-block;
         position: absolute;
         opacity: 0;
-        left: 10px;
-        top: 8px;
+        left: 7px;
+        top: 5px;
         z-index: 1;
     }
+    
 }
